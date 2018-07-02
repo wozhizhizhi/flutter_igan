@@ -4,7 +4,7 @@
 - 单纯为了学习与交流，希望大家喜欢，多多提意见。
 - 会将新知识点用到该项目，会保持持续更新
 
-<img src="https://github.com/zhujian1989/flutter_study/blob/master/screenshot/10.jpeg" width="350" height="600">
+<img src="https://raw.githubusercontent.com/wozhizhizhi/flutter_igan/master/gif/GIF011.gif" width="350" height="600">
 
 ## 知识点
 1.基础布局  
