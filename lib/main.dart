@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart'; //一个用于识别操作系统的工
 import 'common/common_theme.dart';
 import 'widget/home.dart';
 import 'widget/chat/chatScreen.dart';
+import 'widget/oschain/tabhomepage.dart';
 
 void main() => runApp(new MyApp());
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       // 在main()设定每个页面的别称通过Navigator.pushNamed()跳转
       routes: <String , WidgetBuilder>{
         '/chat': (BuildContext context) => new ChatScreen(),
+        '/tabhomepage': (BuildContext context) => new TabHomePage(),
       },
       theme:
           defaultTargetPlatform == TargetPlatform.iOS ? androidTheme : IOSTheme,

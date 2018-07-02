@@ -60,8 +60,9 @@ class _DrawerPageState extends State<DrawerPage> {
             }),
         new Divider(),
         new ListTile(
-          title: new Text("待定"),
+          title: new Text("实现底部导航,使用自带图片"),
           trailing: new Icon(Icons.arrow_right),
+          onTap: () => Navigator.pushNamed(context, "/tabhomepage"),
         ),
         new Divider(),
         new ListTile(
