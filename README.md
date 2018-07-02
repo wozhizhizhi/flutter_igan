@@ -1,8 +1,8 @@
 # flutter_igan
 
-感谢 http://gank.io 提供的api
-单纯为了学习与交流，希望大家喜欢，多多提意见。
-会将新知识点用到该项目，会保持持续更新
+感谢 http://gank.io 提供的api/n
+单纯为了学习与交流，希望大家喜欢，多多提意见。/n
+会将新知识点用到该项目，会保持持续更新/n
 
 <img src="https://github.com/zhujian1989/flutter_study/blob/master/screenshot/10.jpeg" width="350" height="600">
 
