@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_igan/widget/chat/chatScreen.dart';
+import 'package:flutter_igan/widget/httpget/AwesomeTips.dart';
 
 class DrawerPage extends StatefulWidget {
   @override
@@ -66,8 +67,13 @@ class _DrawerPageState extends State<DrawerPage> {
         ),
         new Divider(),
         new ListTile(
-          title: new Text("待定"),
+          title: new Text("使用第三方http框架，现在貌似不用导包了,自带这个包"),
           trailing: new Icon(Icons.arrow_right),
+          onTap: (){
+            Navigator.of(context).push(new MaterialPageRoute(builder: (context){
+              return new AwesomeTips();
+            }));
+          },
         ),
         new Divider(),
         new ListTile(
