@@ -77,10 +77,12 @@ class _DrawerPageState extends State<DrawerPage> {
         ),
         new Divider(),
         new ListTile(
-          title: new Text("待定"),
+          title: new Text("跳转到登录界面"),
           trailing: new Icon(Icons.arrow_right),
+          onTap: () => Navigator.pushNamed(context, "/Login"),
         ),
         new Divider(),
+      
       ],
     );
   }

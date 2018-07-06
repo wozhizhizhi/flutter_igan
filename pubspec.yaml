@@ -10,6 +10,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_webview_plugin: "^0.1.6"
   http: "^0.11.3+16"
+  device_info : ^0.2.1
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +37,10 @@ flutter:
     - images/ic_nav_discover_actived.png
     - images/ic_nav_my_normal.png
     - images/ic_nav_my_pressed.png
+    - images/img_record_bg.png
+    - images/img_login_pwd.png
+    - images/img_login_user.png
+    - images/login_logo.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

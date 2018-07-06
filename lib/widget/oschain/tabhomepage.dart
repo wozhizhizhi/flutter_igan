@@ -44,8 +44,10 @@ class _TabHomePageState extends State<TabHomePage> {
         ]
       ];
     }
+  }
 
-    _body = new IndexedStack(
+  void initPage(){
+     _body = new IndexedStack(
       children: <Widget>[
         new NewListPage(),
         new TweetsListPage(),
@@ -80,6 +82,7 @@ class _TabHomePageState extends State<TabHomePage> {
   @override
   Widget build(BuildContext context) {
     initData();
+    initPage();
     return new MaterialApp(
       theme: new ThemeData(primaryColor: new Color(0xFF63CA6C)),
       home: new Scaffold(

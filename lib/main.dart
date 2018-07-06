@@ -4,6 +4,7 @@ import 'common/common_theme.dart';
 import 'widget/home.dart';
 import 'widget/chat/chatScreen.dart';
 import 'widget/oschain/tabhomepage.dart';
+import 'widget/login.dart';
 
 void main() => runApp(new MyApp());
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: <String , WidgetBuilder>{
         '/chat': (BuildContext context) => new ChatScreen(),
         '/tabhomepage': (BuildContext context) => new TabHomePage(),
+        '/Login': (BuildContext context) => new LoginPage(),
       },
       theme:
           defaultTargetPlatform == TargetPlatform.iOS ? androidTheme : IOSTheme,
