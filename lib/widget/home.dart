@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_igan/widget/drawer_page.dart';
+import 'package:flutter/cupertino.dart';
 import 'tab_gril_page.dart';
 import 'tab_android_page.dart';
 import 'tab_ios_page.dart';
@@ -38,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: _body,
-      bottomNavigationBar: new BottomNavigationBar(
+      bottomNavigationBar: new CupertinoTabBar(
         currentIndex: _currentIndex,
         items: <BottomNavigationBarItem>[
           new BottomNavigationBarItem(
