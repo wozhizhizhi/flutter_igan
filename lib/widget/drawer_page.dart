@@ -69,8 +69,10 @@ class _DrawerPageState extends State<DrawerPage> {
         new ListTile(
           title: new Text("使用第三方http框架，现在貌似不用导包了,自带这个包"),
           trailing: new Icon(Icons.arrow_right),
-          onTap: (){
-            Navigator.of(context).push(new MaterialPageRoute(builder: (context){
+          onTap: () {
+            Navigator
+                .of(context)
+                .push(new MaterialPageRoute(builder: (context) {
               return new AwesomeTips();
             }));
           },
@@ -82,7 +84,26 @@ class _DrawerPageState extends State<DrawerPage> {
           onTap: () => Navigator.pushNamed(context, "/Login"),
         ),
         new Divider(),
-      
+        new ListTile(
+          title: new Text("妹子页面使用dio框架进行请求(fl_repository_imlp.dart)"),
+          trailing: new Icon(Icons.arrow_right),
+          onTap: () => showDialog(
+                context: context,
+                child: SimpleDialog(
+                  title: new Text("温馨提示"),
+                  children: <Widget>[
+                    new Center(
+                      child: new Text("没有跳转,请直接看代码吧!"),
+                    ),
+                  ],
+                ),
+              ),
+        ),
+        //       Scaffold.of(context).showSnackBar(new SnackBar(
+        //             content: new Text("没有跳转,请直接看代码吧!"),
+        //           )),
+        // ),
+        new Divider(),
       ],
     );
   }
