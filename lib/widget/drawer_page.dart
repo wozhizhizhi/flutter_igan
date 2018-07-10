@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_igan/widget/chat/chatScreen.dart';
 import 'package:flutter_igan/widget/httpget/AwesomeTips.dart';
+import 'package:flutter_igan/widget/star/StarPage.dart';
 
 class DrawerPage extends StatefulWidget {
   @override
@@ -103,6 +104,14 @@ class _DrawerPageState extends State<DrawerPage> {
         //             content: new Text("没有跳转,请直接看代码吧!"),
         //           )),
         // ),
+        new Divider(),
+        new ListTile(
+          title: new Text("自定义评论界面"),
+          trailing: new Icon(Icons.arrow_right),
+          onTap: () => Navigator.of(context).push(new MaterialPageRoute(builder: (context){
+            return new StarPage();
+          })),
+        ),
         new Divider(),
       ],
     );
