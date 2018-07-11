@@ -53,8 +53,8 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-  // 单机弹框退出应用
-  Future<bool> _dialogExitApp() {
+  // 单击机弹框退出应用
+  Future<bool> _dialogExitApp(){
     showDialog(
         context: context,
         child: new AlertDialog(
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
             ),
             new FlatButton(
                 onPressed: () {
-                  return new Future.value(true);
+                  Navigator.popAndPushNamed(context, "/Login");
                 },
                 child: new Text('确定'))
           ],
