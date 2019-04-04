@@ -17,12 +17,12 @@ class Fecth {
 
   Fecth() {
     options = new Options(
-      baseUrl: Apis.BASE_URL,
+//      baseUrl: Apis.BASE_URL,
       connectTimeout: 15000,
       receiveTimeout: 5000,
     );
 
-    dio = new Dio(options);
+//    dio = new Dio(options);
   }
 
   getDio() {

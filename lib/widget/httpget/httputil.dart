@@ -10,7 +10,7 @@ class HttpUtil {
         "https://app.kangzubin.com/iostips/api/feed/list?page=${page}&from=flutter-app&version=1.0";
     try {
       await http.get(url).then((reponse) {
-        var json = JSON.decode(reponse.body);
+        var json = jsonDecode(reponse.body);
         var code = json['code'];
         if (code == 0) {
           var data = json['data'];

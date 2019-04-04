@@ -15,7 +15,7 @@ class GetAndroidData{
         var request = await httpClient.getUrl(Uri.parse(url));
         var reponse = await request.close();
         if (reponse.statusCode == HttpStatus.OK){
-            String json = await reponse.transform(UTF8.decoder).join();
+            String json = await reponse.transform(utf8.decoder).join();
             aiModes = jsonDecode(json)["results"];
         }
         else{
